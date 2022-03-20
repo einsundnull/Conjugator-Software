@@ -1,0 +1,9 @@
+package enums;
+
+public enum TypeOfScrollPane {
+	VERTICALLY_LEFT,
+	VERTICALLY_RIGHT,
+	HORIZONTALLY_TOP,
+	HORIZONTALLY_BOTTOM,
+	ALL_DIRECTIONS
+}

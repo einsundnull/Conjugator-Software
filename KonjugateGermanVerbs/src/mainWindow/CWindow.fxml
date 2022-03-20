@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="23.0" minWidth="0.0" prefHeight="473.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainWindow.CWindow">
+   <center>
+      <Pane fx:id="display" minHeight="0.0" minWidth="0.0" nodeOrientation="LEFT_TO_RIGHT" pickOnBounds="false" style="-fx-background-color: lightgrey;" BorderPane.alignment="CENTER">
+         <opaqueInsets>
+            <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+         </opaqueInsets>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor></Pane>
+   </center>
+   <left>
+      <Pane fx:id="dragFieldLeft" minHeight="0.0" minWidth="1.0" prefHeight="73.0" prefWidth="1.0" BorderPane.alignment="CENTER">
+         <cursor>
+            <Cursor fx:constant="H_RESIZE" />
+         </cursor></Pane>
+   </left>
+   <right>
+      <Pane fx:id="dragFieldRight" minHeight="1.0" minWidth="-Infinity" prefHeight="200.0" prefWidth="1.0" BorderPane.alignment="CENTER">
+         <cursor>
+            <Cursor fx:constant="H_RESIZE" />
+         </cursor></Pane>
+   </right>
+   <bottom>
+      <Pane fx:id="dragFieldBottom" minHeight="1.0" minWidth="0.0" prefHeight="1.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <cursor>
+            <Cursor fx:constant="V_RESIZE" />
+         </cursor></Pane>
+   </bottom>
+   <top>
+      <VBox fx:id="background" layoutX="1.0" minHeight="25.0" minWidth="0.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="25.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane fx:id="dragFieldTop" minHeight="0.0" minWidth="0.0" prefHeight="1.0" prefWidth="200.0" />
+            <HBox  minHeight="-Infinity" minWidth="78.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="23.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <HBox  maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="23.0" prefWidth="86.0">
+                     <children>
+                        <Pane fx:id="exitButton" cache="true" cacheHint="SPEED" depthTest="DISABLE" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="27.0" style="-fx-background-color: white;" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets left="2.0" top="1.0" />
+                           </HBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </Pane>
+                        <Pane fx:id="resizeButton" cache="true" cacheHint="SPEED" depthTest="DISABLE" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="27.0" style="-fx-background-color: white;">
+                           <padding>
+                              <Insets top="1.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                           </HBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </Pane>
+                        <Pane fx:id="trayButton" cache="true" cacheHint="SPEED" depthTest="DISABLE" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="27.0" snapToPixel="false" style="-fx-background-color: white;">
+                           <padding>
+                              <Insets top="1.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets right="2.0" top="1.0" />
+                           </HBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </Pane>
+                     </children>
+                  </HBox>
+                  <Pane fx:id="dragFieldPostition" layoutY="1.0" maxHeight="-Infinity" minHeight="-Infinity" minWidth="0.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="23.0" prefWidth="516.0" style="-fx-background-color: transparent;" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets right="1.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </Pane>
+               </children>
+            </HBox>
+         </children>
+         <cursor>
+            <Cursor fx:constant="V_RESIZE" />
+         </cursor>
+      </VBox>
+   </top>
+   <effect>
+      <DropShadow />
+   </effect>
+</BorderPane>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="window.CustomWindow2">
+   <children>
+      <VBox prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <VBox prefHeight="60.0" prefWidth="187.0">
+                     <children>
+                        <TextField fx:id="germanVerb" prefHeight="25.0" prefWidth="112.0">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="15.0" right="15.0" top="15.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <TextField fx:id="translatedVerb" prefHeight="25.0" prefWidth="150.0">
+                           <VBox.margin>
+                              <Insets bottom="15.0" left="15.0" right="15.0" />
+                           </VBox.margin>
+                        </TextField>
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <Separator prefHeight="0.0" prefWidth="600.0" />
+            <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <VBox prefHeight="116.0" prefWidth="207.0" HBox.hgrow="NEVER">
+                     <children>
+                        <CheckBox fx:id="ckBxAkk" mnemonicParsing="false" text="Akkusative">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="15.0" top="5.0" />
+                           </VBox.margin>
+                           <tooltip>
+                              <Tooltip text="Empty Tooltip" />
+                           </tooltip>
+                        </CheckBox>
+                        <CheckBox fx:id="ckBxDat" mnemonicParsing="false" text="Dative">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="15.0" />
+                           </VBox.margin>
+                        </CheckBox>
+                        <CheckBox fx:id="ckBxDatAkk" mnemonicParsing="false" text="Dat/Akk">
+                           <VBox.margin>
+                              <Insets bottom="15.0" left="15.0" />
+                           </VBox.margin>
+                        </CheckBox>
+                        <Separator prefHeight="3.0" prefWidth="587.0">
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                        </Separator>
+                        <CheckBox fx:id="ckBxRef" mnemonicParsing="false" text="Reflexive (sich)">
+                           <VBox.margin>
+                              <Insets bottom="15.0" left="15.0" />
+                           </VBox.margin>
+                        </CheckBox>
+                        <Separator prefHeight="77.0" prefWidth="207.0" />
+                        <CheckBox fx:id="ckBxHaben" mnemonicParsing="false" prefHeight="17.0" prefWidth="123.0" text="Perfect &quot;haben&quot;">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="15.0" top="5.0" />
+                           </VBox.margin>
+                        </CheckBox>
+                        <CheckBox fx:id="ckBxSein" mnemonicParsing="false" prefHeight="17.0" prefWidth="123.0" text="Perfect &quot;sein&quot;">
+                           <VBox.margin>
+                              <Insets bottom="20.0" left="15.0" />
+                           </VBox.margin>
+                        </CheckBox>
+                     </children>
+                  </VBox>
+                  <Separator orientation="VERTICAL" prefHeight="200.0" />
+                  <VBox prefHeight="167.0" prefWidth="210.0" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </VBox>
+                  <Separator orientation="VERTICAL" prefHeight="200.0" />
+                  <VBox prefHeight="172.0" prefWidth="168.0" HBox.hgrow="NEVER">
+                     <children>
+                        <CheckBox fx:id="ckBxPDF" mnemonicParsing="false" selected="true" text="PDF">
+                           <VBox.margin>
+                              <Insets bottom="5.0" top="5.0" />
+                           </VBox.margin>
+                        </CheckBox>
+                        <CheckBox fx:id="ckBxEXCEL" mnemonicParsing="false" text="Excel (*.xlsx)">
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                        </CheckBox>
+                        <CheckBox fx:id="ckBxTEXT" mnemonicParsing="false" text="Text (*.txt)">
+                           <VBox.margin>
+                              <Insets bottom="15.0" />
+                           </VBox.margin>
+                        </CheckBox>
+                        <Separator prefHeight="1.0" prefWidth="181.0">
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                        </Separator>
+                        <CheckBox fx:id="ckBxFirstTrans" mnemonicParsing="false" selected="true" text="translation first">
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                        </CheckBox>
+                        <CheckBox fx:id="ckBxFirstGerman" mnemonicParsing="false" text="German verb first">
+                           <VBox.margin>
+                              <Insets bottom="15.0" />
+                           </VBox.margin>
+                        </CheckBox>
+                        <Label fx:id="lblFileName" prefHeight="17.0" prefWidth="172.0" />
+                        <Separator prefHeight="1.0" prefWidth="181.0">
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                        </Separator>
+                        <Button fx:id="btnConjugate" mnemonicParsing="false" text="Conjugate">
+                           <VBox.margin>
+                              <Insets bottom="15.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </VBox>
+      <Separator prefHeight="0.0" prefWidth="585.0" />
+      <VBox prefWidth="600.0" spacing="5.0" VBox.vgrow="ALWAYS">
+         <children>
+            <CheckBox fx:id="ckBxAutoProp" mnemonicParsing="false" selected="true" text="Use automatic proposals">
+               <VBox.margin>
+                  <Insets bottom="5.0" top="15.0" />
+               </VBox.margin>
+            </CheckBox>
+            <CheckBox fx:id="ckBxDefManual" mnemonicParsing="false" text="Define verb manually">
+               <padding>
+                  <Insets bottom="15.0" />
+               </padding>
+            </CheckBox>
+            <HBox prefHeight="16.0" prefWidth="600.0" spacing="5.0">
+               <children>
+                  <TextField fx:id="ckBxDefManRef" disable="true" prefHeight="25.0" prefWidth="60.0" />
+                  <TextField fx:id="ckBxDefManPreSyl" disable="true" prefHeight="25.0" prefWidth="72.0" />
+                  <TextField fx:id="ckBxDefManVerbStem" disable="true" prefHeight="25.0" prefWidth="72.0" />
+               </children>
+            </HBox>
+            <CheckBox disable="true" mnemonicParsing="false" text="CheckBox">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </CheckBox>
+            <CheckBox disable="true" mnemonicParsing="false" text="CheckBox" />
+            <CheckBox disable="true" mnemonicParsing="false" text="CheckBox" />
+            <CheckBox disable="true" mnemonicParsing="false" text="CheckBox" />
+            <CheckBox disable="true" mnemonicParsing="false" text="CheckBox">
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin>
+            </CheckBox>
+            <CheckBox disable="true" mnemonicParsing="false" text="CheckBox" />
+            <CheckBox disable="true" mnemonicParsing="false" text="CheckBox" />
+            <CheckBox disable="true" mnemonicParsing="false" text="CheckBox" />
+            <CheckBox disable="true" mnemonicParsing="false" text="CheckBox" />
+            <CheckBox disable="true" mnemonicParsing="false" text="CheckBox" />
+            <CheckBox disable="true" mnemonicParsing="false" text="CheckBox">
+               <padding>
+                  <Insets top="15.0" />
+               </padding>
+            </CheckBox>
+            <CheckBox disable="true" mnemonicParsing="false" text="CheckBox" />
+            <CheckBox disable="true" mnemonicParsing="false" text="CheckBox" />
+         </children>
+         <padding>
+            <Insets left="15.0" />
+         </padding>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="15.0" />
+   </padding>
+</VBox>
